@@ -147,6 +147,10 @@ body {
         display: none;
     }
 
+    .group:nth-child(2) {
+        border: none;
+    }
+
     .continue {
         width: 100%;
     }
