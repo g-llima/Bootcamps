@@ -130,3 +130,20 @@ body {
     height: 5.5rem;
     bottom: 10px;
 }
+
+/* mobile */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .phone {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+}
