@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+}
+
+header {
+    background: #122A57;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header .list-items {
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-items li a{
+    color: white;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+/* ------------------------ */
+
+.apresentacao {
+    height: 80vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+}
+
+.texto-apresentacao h1{
+    color: #122A57;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: #122A57;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px 0;
+}
+
+/* ---------------------- */
+
+.quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.quem-somos .texto-quem-somos {
+    max-width: 500px;
+}
+
+.quem-somos h2 {
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.quem-somos h2::before {
+    content: "";
+    height: 45px;
+    width: 5px;
+    margin-right: 5px;
+    background: #122A57;
+    position: relative;
+}
+
+.quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.quem-somos img {
+    min-width: 420px;
+}
+
+/* ------------------- */
+
+.container-externo {
+    background: #122A57;
+    width: 100%;
+}
+
+.servicos {
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.servicos h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico a{
+    width: 220px;
+    background: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #122A57;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item-servico p {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+}
+
+.item-servico img {
+    width: 80%;
+    margin: auto;
+}
+
+/* -------------------- */
+
+.planos {
+    flex-direction: column;
+    min-height: 100vh;
+    background: white;
+    padding-top: 50px;
+}
+
+.planos h2 {
+    font-size: 32px;
+    color: #122A57;
+}
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-plano {
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.item-plano .btn {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3 {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.item-plano h3::after {
+    content: "";
+    background: #122A57;
+    width: 100%;
+    height: 3px;
+    margin: 20px 0 10px 0;
+}
+
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #122A57;
+    margin-right: 5px;
+}
+
+/* ------------ */
+
+footer {
+    background: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer {
+    justify-content: space-between;
+    color: white;
+}
