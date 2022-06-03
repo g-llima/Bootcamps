@@ -7,3 +7,23 @@
 img {
     width: 30px;
 }
+
+table {
+    margin: 1rem;
+    color: #2e2e2e;
+}
+
+thead tr th{
+    padding: 1rem;
+    background: #f1f1f1;
+    border-radius: 5px 5px 0 0;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;   
+}
+
+.title {
+    text-align: center;
+}
