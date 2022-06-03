@@ -4,19 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './courses/course-list.component';
+import { ReplacePipe } from './custom-pipes/replace.pipe';
 import { StarComponent } from './star/star.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CourseListComponent,
-    StarComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  declarations: [AppComponent, CourseListComponent, StarComponent, ReplacePipe],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
