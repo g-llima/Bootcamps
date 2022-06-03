@@ -1,36 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { Course } from "./courses";
+import { Component, OnInit } from '@angular/core';
+import { CourseService } from './course-service';
+import { Course } from './courses';
 
 @Component({
-    selector: "app-course-list",
-    templateUrl: './course-list.component.html',
+  selector: 'app-course-list',
+  templateUrl: './course-list.component.html',
+  styleUrls: ['./course-list.component.scss'],
 })
-export class CourseListComponent implements OnInit{
+export class CourseListComponent implements OnInit {
+  courses: Course[] = [];
 
-    courses: Course[] = [];
+  constructor(private courseService: CourseService) {}
 
-    ngOnInit(): void {
-        this.courses = [
-            {
-                id: 1,
-                name: "Angular: Forms",
-                imageUrl: "",
-                price: 99.99,
-                code: "XPS-8796",
-                duration: 120,
-                rating: 4.5,
-                releaseDate: "November, 2, 2019",
-            },
-            {
-                id: 2,
-                name: "Angular: HTTP",
-                imageUrl: "",
-                price: 45.99,
-                code: "LKR-1094",
-                duration: 80,
-                rating: 4,
-                releaseDate: "August, 4, 2020",
-            },
-        ]
-    }
+  ngOnInit(): void {
+    this.courses = this.courseService.retrieveAll();
+  }
 }
