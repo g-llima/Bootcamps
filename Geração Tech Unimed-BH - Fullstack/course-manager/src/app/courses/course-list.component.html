@@ -1,6 +1,9 @@
 <h2 class="title">Course List</h2>
 
-<div></div>
+<div class="filter-input">
+  <label for="filter">Filter by: </label>
+  <input [(ngModel)]="filter" type="text" id="filter" />
+</div>
 
 <table>
   <thead>
@@ -15,7 +18,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let course of courses">
+    <tr *ngFor="let course of filteredCourses">
       <td>{{ course.name }}</td>
       <td class="img-wrapper">
         <img [src]="course.imageUrl" [alt]="course.name" />
