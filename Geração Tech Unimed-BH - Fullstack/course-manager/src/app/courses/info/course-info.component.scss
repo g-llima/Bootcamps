@@ -1,0 +1,48 @@
+hr {
+    margin: 1rem 0;
+}
+form {
+    .form-container {
+        display: flex;
+        width: 100%;
+        min-width: 300px;
+        flex-direction: column;
+
+        .field {
+            margin: 10px 0;
+            width: 30vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+
+            p {
+                width: 90%;
+                text-align: left;
+                margin-left: auto;
+                font-size: 12px;
+                opacity: 0;
+                transition: .1s ease-out;
+            }
+        }
+
+        input, textarea {
+            padding: 8px;
+            width: 90%;
+            align-self: flex-end;
+            border-radius: 5px;
+            border: 1px solid #CACACA;
+            outline: none;
+        }
+    }
+}
+.is-invalid {
+    border-color: red !important;
+    color: red;
+    opacity: 1 !important;
+}

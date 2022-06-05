@@ -1,1 +1,112 @@
-<h1>{{ courseId }}</h1>
+<h2>Course Info</h2>
+
+<hr />
+
+<form #courseForm="ngForm">
+  <div class="form-container">
+    <div class="field">
+      <label for="name">Name: </label>
+      <div class="input-field">
+        <input
+          [(ngModel)]="course!.name"
+          type="text"
+          id="name"
+          name="name"
+          #courseName="ngModel"
+          required
+          [ngClass]="{ 'is-invalid': courseName.invalid }"
+        />
+        <p [ngClass]="{ 'is-invalid': courseName.invalid }">Required field*</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="price">Price: </label>
+      <div class="input-field">
+        <input
+          [(ngModel)]="course!.price"
+          type="text"
+          id="price"
+          name="price"
+          #coursePrice="ngModel"
+          required
+          [ngClass]="{ 'is-invalid': coursePrice.invalid }"
+        />
+        <p [ngClass]="{ 'is-invalid': coursePrice.invalid }">Required field*</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="code">Code: </label>
+      <div class="input-field">
+        <input
+          [(ngModel)]="course!.code"
+          type="text"
+          id="code"
+          name="code"
+          #courseCode="ngModel"
+          required
+          [ngClass]="{ 'is-invalid': courseCode.invalid }"
+        />
+        <p [ngClass]="{ 'is-invalid': courseCode.invalid }">Required field*</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="duration">Duration: </label>
+      <div class="input-field">
+        <input
+          [(ngModel)]="course!.duration"
+          type="number"
+          id="duration"
+          name="duration"
+          #courseDuration="ngModel"
+          required
+          [ngClass]="{ 'is-invalid': courseDuration.invalid }"
+          min="20"
+        />
+        <p [ngClass]="{ 'is-invalid': courseDuration.invalid }">
+          Required field*
+        </p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="rating">Rating: </label>
+      <div class="input-field">
+        <input
+          [(ngModel)]="course!.rating"
+          type="number"
+          id="rating"
+          name="rating"
+          #courseRating="ngModel"
+          required
+          [ngClass]="{ 'is-invalid': courseRating.invalid }"
+          min="0"
+        />
+        <p [ngClass]="{ 'is-invalid': courseRating.invalid }">
+          Required field*
+        </p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="description">Description: </label>
+      <div class="input-field">
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="2"
+          [(ngModel)]="course!.description"
+          [ngClass]="{ 'is-invalid': courseRating.invalid }"
+          #courseDescription="ngModel"
+        >
+        </textarea>
+        <p [ngClass]="{ 'is-invalid': courseDescription.invalid }">
+          Required field*
+        </p>
+      </div>
+    </div>
+  </div>
+</form>
