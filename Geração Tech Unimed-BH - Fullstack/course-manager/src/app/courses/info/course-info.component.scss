@@ -1,6 +1,10 @@
 hr {
     margin: 1rem 0;
 }
+
+h2 {
+    text-align: center;
+}
 form {
     .form-container {
         display: flex;
@@ -38,6 +42,7 @@ form {
             border-radius: 5px;
             border: 1px solid #CACACA;
             outline: none;
+            resize: vertical;
         }
     }
 }
