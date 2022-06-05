@@ -8,7 +8,7 @@ import { Course } from '../courses';
   styleUrls: ['./course-info.component.scss'],
 })
 export class CourseInfoComponent implements OnInit {
-  course: Course | undefined;
+  course: Course;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -19,5 +19,9 @@ export class CourseInfoComponent implements OnInit {
     this.course = this.courseSerivce.retrieveById(
       Number(this.activatedRoute.snapshot.paramMap.get('id'))
     );
+  }
+
+  save(): void {
+    this.courseSerivce.save(this.course);
   }
 }

@@ -45,6 +45,22 @@ form {
             resize: vertical;
         }
     }
+
+    .buttons {
+        .btn {
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .save-btn {
+            background: #5154ff;
+            color: white;
+        }
+    }
 }
 .is-invalid {
     border-color: red !important;

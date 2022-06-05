@@ -7,10 +7,10 @@ import { Course } from './courses';
   styleUrls: ['./course-list.component.scss'],
 })
 export class CourseListComponent implements OnInit {
-  filteredCourses: Course[] = [];
+  filteredCourses: Course[];
 
-  _courses: Course[] = [];
-  _filterBy: string = '';
+  _courses: Course[];
+  _filterBy: string;
 
   constructor(private courseService: CourseService) {}
 

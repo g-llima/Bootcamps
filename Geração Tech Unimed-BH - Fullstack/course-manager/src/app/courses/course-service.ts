@@ -9,8 +9,15 @@ export class CourseService {
     return COURSES;
   }
 
-  retrieveById(id: number) {
-    return COURSES.find((x: Course) => x.id === id);
+  retrieveById(id: number): Course {
+    return COURSES.find((x: Course) => x.id === id)!;
+  }
+
+  save(course: Course): void {
+    if (course.id) {
+      const i = COURSES.findIndex((x: Course) => x.id === course.id);
+      COURSES[i] = course;
+    }
   }
 }
 
