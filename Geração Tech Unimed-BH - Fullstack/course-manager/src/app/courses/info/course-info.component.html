@@ -83,6 +83,7 @@
           required
           [ngClass]="{ 'is-invalid': courseRating.invalid }"
           min="0"
+          max="5"
         />
         <p [ngClass]="{ 'is-invalid': courseRating.invalid }">
           Required field*
@@ -99,8 +100,9 @@
           cols="30"
           rows="2"
           [(ngModel)]="course!.description"
-          [ngClass]="{ 'is-invalid': courseRating.invalid }"
+          [ngClass]="{ 'is-invalid': courseDescription.invalid }"
           #courseDescription="ngModel"
+          required
         >
         </textarea>
         <p [ngClass]="{ 'is-invalid': courseDescription.invalid }">
