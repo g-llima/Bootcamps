@@ -6,6 +6,7 @@ import { Error404NotFound } from './404/error-404.component';
 
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './courses/course-list.component';
+import { CourseInfoComponent } from './courses/info/course-info.component';
 import { ReplacePipe } from './custom-pipes/replace.pipe';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { StarComponent } from './star/star.component';
@@ -18,6 +19,7 @@ import { StarComponent } from './star/star.component';
     ReplacePipe,
     NavBarComponent,
     Error404NotFound,
+    CourseInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,10 @@ import { StarComponent } from './star/star.component';
       {
         path: 'courses',
         component: CourseListComponent,
+      },
+      {
+        path: 'courses/info/:id',
+        component: CourseInfoComponent,
       },
       {
         path: '**',
