@@ -1,1 +1,17 @@
-{{ user.name }}
+<div class="container">
+  <form>
+    <div class="input">
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" [value]="user.name" />
+    </div>
+
+    <div class="input">
+      <label for="email">E-mail: </label>
+      <input type="email" name="email" id="email" [value]="user.email" />
+    </div>
+    <div class="input">
+      <label for="imgUrl">URL Imagem: </label>
+      <input type="text" name="imgUrl" id="imgUrl" [value]="user.imgUrl" />
+    </div>
+  </form>
+</div>

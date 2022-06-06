@@ -5,6 +5,7 @@ import { UserService } from 'src/app/services/user/user.service';
 
 @Component({
   templateUrl: 'card-edit.component.html',
+  styleUrls: ['card-edit.component.scss'],
 })
 export class CardEditComponent implements OnInit {
   constructor(
