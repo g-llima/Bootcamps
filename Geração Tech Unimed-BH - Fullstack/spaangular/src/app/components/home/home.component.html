@@ -1,2 +1,7 @@
-<h1>oi</h1>
-<card-component></card-component>
+<div *ngFor="let user of _USERS">
+  <card-component
+    [name]="user.name"
+    [email]="user.email"
+    [imgUrl]="user.imgUrl"
+  ></card-component>
+</div>
