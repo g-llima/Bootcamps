@@ -19,9 +19,40 @@ thead tr th{
     border-radius: 5px 5px 0 0;
 }
 
-tbody td {
-    padding: 10px;
-    text-align: center;   
+tbody {
+    td {
+        padding: 10px;
+        text-align: center;   
+    }
+
+    .actions {
+
+        .btn {
+            padding: 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all .1s ease-in;
+        }
+
+        a {
+            background: #2e2e2e;
+
+            &:hover {
+                background: #5a5a5a;
+            }
+        }
+        button {
+            background: #f73636;
+            color: white;
+
+            &:hover {
+                background: #fd7d7d;
+            }
+        }
+    }
+
 }
 
 .title {
