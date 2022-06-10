@@ -23,5 +23,30 @@
                 border-radius: 5px;
             }
         }
+
+        .btns {
+            width: 50%;
+            margin: 3rem auto 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+
+            .btn {
+                padding: 10px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .btn-save {
+                background: #20d2ff;
+                color: white;
+            }
+
+            .btn-back {
+                background: rgb(248, 21, 21);
+                color: white;
+            }
+        }
     }
 }

@@ -1,17 +1,19 @@
 <div class="container">
   <div class="usuario">
-    <img width="70px" height="70px" [src]="imgUrl" [alt]="name" />
+    <img width="70px" height="70px" [src]="user.imgUrl" [alt]="user.name" />
     <div class="texto">
-      <h3>{{ name }}</h3>
+      <h3>{{ user.name }}</h3>
       <div>
         <i class="bi bi-envelope"></i>
-        <p>{{ email }}</p>
+        <p>{{ user.email }}</p>
       </div>
       <p class="data">Added on 11/05, 2014, 10:19 PM</p>
     </div>
   </div>
   <div class="acoes">
-    <button class="btn edit-btn">Editar</button>
+    <button class="btn edit-btn" [routerLink]="['/edit', user.id]">
+      Editar
+    </button>
     <button class="btn dele-btn">Excluir</button>
   </div>
 </div>

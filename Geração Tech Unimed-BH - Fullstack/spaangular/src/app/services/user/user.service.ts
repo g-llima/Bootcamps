@@ -10,7 +10,14 @@ export class UserService {
   }
 
   retrieveById(id: number): User {
-    return this.USERS.find((x) => x.id === id) || this.USERS[0];
+    return (
+      this.USERS.find((x) => x.id === id) || {
+        id: this.USERS.length,
+        name: '',
+        email: '',
+        imgUrl: '',
+      }
+    );
   }
 
   USERS: User[] = [
@@ -19,7 +26,7 @@ export class UserService {
       name: 'Giga Chad',
       email: 'gigachad@gmail.com',
       imgUrl:
-        'https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/84428eae99c40b78a6d7dccd6805fc76~c5_720x720.jpeg?x-expires=1654693200&x-signature=OEVVG0DpNeVIrb26EXrlU89MOAI%3D',
+        'https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/84428eae99c40b78a6d7dccd6805fc76~c5_720x720.jpeg?x-expires=1655010000&x-signature=%2BKFsBGkBX8EaVofSScBX9kE07lk%3D',
     },
     {
       id: 1,
