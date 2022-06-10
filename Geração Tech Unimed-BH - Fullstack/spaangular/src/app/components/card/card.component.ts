@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { User } from 'src/app/services/user/user';
+import { UserService } from 'src/app/services/user/user.service';
 
 @Component({
   selector: 'card-component',
@@ -7,7 +8,14 @@ import { User } from 'src/app/services/user/user';
   styleUrls: ['card.component.scss'],
 })
 export class CardComponent implements OnInit {
+  constructor(private userService: UserService) {}
+
   ngOnInit(): void {}
 
   @Input() user: User;
+  @Output() clickChildren = new EventEmitter();
+
+  onDelete(id: number) {
+    this.clickChildren.emit(id);
+  }
 }

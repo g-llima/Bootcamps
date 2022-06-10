@@ -13,4 +13,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this._USERS = this.userService.retrieveAll();
   }
+
+  clicouDelete(id: number) {
+    this.userService.userDelete(id);
+    this._USERS = this.userService.retrieveAll();
+  }
 }

@@ -1,3 +1,6 @@
 <div *ngFor="let user of _USERS">
-  <card-component [user]="user"></card-component>
+  <card-component
+    [user]="user"
+    (clickChildren)="clicouDelete($event)"
+  ></card-component>
 </div>

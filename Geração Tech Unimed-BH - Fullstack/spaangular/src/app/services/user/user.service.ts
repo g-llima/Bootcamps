@@ -21,8 +21,14 @@ export class UserService {
   }
 
   userPut(id: number, user: User) {
-    let i = this.USERS.findIndex((x) => (x.id = id));
+    let i = this.USERS.findIndex((x) => x.id === id);
     this.USERS[i] = user;
+  }
+
+  userDelete(id: number) {
+    let user = this.USERS.find((x) => x.id === id);
+    this.USERS = this.USERS.filter((x) => x !== user);
+    console.log(user);
   }
 
   USERS: User[] = [
