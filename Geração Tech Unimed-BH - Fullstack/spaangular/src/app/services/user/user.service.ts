@@ -20,6 +20,11 @@ export class UserService {
     );
   }
 
+  userPut(id: number, user: User) {
+    let i = this.USERS.findIndex((x) => (x.id = id));
+    this.USERS[i] = user;
+  }
+
   USERS: User[] = [
     {
       id: 0,

@@ -20,4 +20,8 @@ export class CardEditComponent implements OnInit {
     this.id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     this.user = this.userService.retrieveById(this.id);
   }
+
+  onSubmit(form: any) {
+    this.userService.userPut(this.id, form.form.value);
+  }
 }

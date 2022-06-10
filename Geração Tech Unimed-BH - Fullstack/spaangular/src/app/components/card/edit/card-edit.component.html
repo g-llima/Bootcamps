@@ -1,21 +1,39 @@
 <div class="container">
-  <form>
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
     <div class="input">
       <label for="name">Nome: </label>
-      <input type="text" name="name" id="name" [value]="user.name" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        [(ngModel)]="user.name"
+        ngModel
+      />
     </div>
 
     <div class="input">
       <label for="email">E-mail: </label>
-      <input type="email" name="email" id="email" [value]="user.email" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        [(ngModel)]="user.email"
+        ngModel
+      />
     </div>
     <div class="input">
       <label for="imgUrl">URL Imagem: </label>
-      <input type="text" name="imgUrl" id="imgUrl" [value]="user.imgUrl" />
+      <input
+        type="text"
+        name="imgUrl"
+        id="imgUrl"
+        [(ngModel)]="user.imgUrl"
+        ngModel
+      />
     </div>
 
     <div class="btns">
-      <button class="btn btn-save">Salvar</button>
+      <button class="btn btn-save" type="submit">Salvar</button>
       <button class="btn btn-back">Voltar</button>
     </div>
   </form>
