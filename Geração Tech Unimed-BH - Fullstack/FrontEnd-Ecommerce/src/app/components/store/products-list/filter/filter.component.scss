@@ -14,3 +14,12 @@
         border-bottom: 1px solid transparent;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        .btn {
+            font-size: 14px;
+            font-weight: lighter;
+        }
+    }
+}

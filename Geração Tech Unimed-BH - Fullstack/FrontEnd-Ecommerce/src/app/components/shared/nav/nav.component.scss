@@ -33,5 +33,21 @@
                 color: white;
             }
         }
+
+        .mobileBtn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .nav { 
+        .items {
+            a {
+                margin: 0 5px !important;
+                font-size: 14px !important;
+            }
+        }
+
     }
 }
