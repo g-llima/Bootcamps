@@ -1,0 +1,26 @@
+<div class="container">
+  <img [src]="produto.image" [alt]="produto.title" />
+  <div class="body">
+    <p class="title">
+      {{
+        produto.title.length > 20
+          ? (produto.title | slice: 0:20) + ".."
+          : produto.title
+      }}
+    </p>
+    <p class="category">{{ produto.category | uppercase }}</p>
+    <p class="description">
+      {{
+        produto.description.length > 20
+          ? (produto.description | slice: 0:20) + ".."
+          : produto.description
+      }}
+    </p>
+    <p class="price">{{ produto.price | currency: "BRL" }}</p>
+
+    <div class="btns">
+      <button class="btn-buy">Comprar</button>
+      <button class="btn-det">Detalhes</button>
+    </div>
+  </div>
+</div>

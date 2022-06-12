@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
-import { BookstoreComponent } from './components/bookstore/bookstore.component';
-import { FilterComponent } from './components/bookstore/filter/filter.component';
+import { ProductService } from './components/store/products-list/products-list.component.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductItemComponent } from './components/store/products-list/product-item/product-item.component';
+import { ProductsListComponent } from './components/store/products-list/products-list.component';
+import { StoreComponent } from './components/store/store.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,12 @@ import { FilterComponent } from './components/bookstore/filter/filter.component'
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    BookstoreComponent,
-    FilterComponent
+    StoreComponent,
+    ProductsListComponent,
+    ProductItemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [ProductService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
