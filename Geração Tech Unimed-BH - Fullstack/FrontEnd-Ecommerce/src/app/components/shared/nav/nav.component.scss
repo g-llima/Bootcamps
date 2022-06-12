@@ -3,7 +3,8 @@
     padding: 1rem;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     .items {
         display: flex;
@@ -11,7 +12,7 @@
         justify-content: center;
 
         a {
-            margin: 10px 20px;
+            margin: 0 20px;
             font-size: 18px;
             transition: color .1s ease-in;
 
@@ -19,19 +20,19 @@
                 color: var(--bg-primary);
             }
         }
-    }
 
-    .btn {
-        padding: 8px;
-        border: 1px solid var(--bg-primary);
-        border-radius: 3px;
-        margin-top: 20px;
-        align-self: center;
-        transition: all .1s ease-in;
-
-        &:hover {
-            background-color: var(--bg-primary);
-            color: white;
+        .btn {
+            padding: 8px;
+            border: 1px solid var(--bg-primary);
+            border-radius: 3px;
+            align-self: center;
+            transition: all .1s ease-in;
+    
+            &:hover {
+                background-color: var(--bg-primary);
+                color: white;
+            }
         }
     }
+
 }
