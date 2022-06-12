@@ -1,9 +1,10 @@
 .container {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
 
     .list {
-        width: 50%;
+        width: 90%;
+        margin: 0 auto;
     }
 }
