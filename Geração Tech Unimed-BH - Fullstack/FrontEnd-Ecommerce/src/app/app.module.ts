@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductItemComponent } from './components/store/products-list/product-item/product-item.component';
 import { ProductsListComponent } from './components/store/products-list/products-list.component';
 import { StoreComponent } from './components/store/store.component';
+import { FilterComponent } from './components/store/products-list/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { StoreComponent } from './components/store/store.component';
     StoreComponent,
     ProductsListComponent,
     ProductItemComponent,
+    FilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ProductService],

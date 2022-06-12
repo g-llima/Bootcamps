@@ -1,3 +1,6 @@
-<div class="container" *ngFor="let product of products">
-  <app-product-item [produto]="product"></app-product-item>
+<div class="container">
+  <app-filter (orderBy)="orderBy($event)"></app-filter>
+  <div *ngFor="let product of products" class="list">
+    <app-product-item [produto]="product"></app-product-item>
+  </div>
 </div>

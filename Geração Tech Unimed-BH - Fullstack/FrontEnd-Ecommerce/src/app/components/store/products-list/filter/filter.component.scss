@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin: 20px auto;
+
+    .btn {
+        border: none;
+        background: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(63, 63, 63);
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+    }
+}
