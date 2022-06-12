@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
+import { BookstoreComponent } from './components/bookstore/bookstore.component';
+import { FilterComponent } from './components/bookstore/filter/filter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    BookstoreComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+.filtro {
+    margin: 1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    display: inline-block;
+
+    p {
+        background: #f8f8f8;
+        padding: 10px;
+        border-bottom: 1px solid #dbdbdb;
+        border-radius: 5px 5px 0 0px;
+    }
+
+    form {
+        padding: 1rem;
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            input {
+                border:1px solid #dbdbdb;
+                border-radius: 2px;
+                padding: 5px;
+                outline: none;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--bg-primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all .1s ease-in;
+
+            &:hover {
+                background: white;
+                color: var(--bg-primary);
+            }
+        }
+    }
+}
