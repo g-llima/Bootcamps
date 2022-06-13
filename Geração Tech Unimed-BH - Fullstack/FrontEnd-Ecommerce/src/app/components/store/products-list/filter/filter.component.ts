@@ -6,8 +6,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./filter.component.scss'],
 })
 export class FilterComponent implements OnInit {
-  counter: number = -1;
-
   @Output() orderBy: EventEmitter<any> = new EventEmitter();
 
   constructor() {}

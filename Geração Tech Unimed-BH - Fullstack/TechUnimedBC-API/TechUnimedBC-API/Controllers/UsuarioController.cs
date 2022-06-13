@@ -7,7 +7,6 @@ namespace TechUnimedBC_API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-
         [HttpPost]
         [Route("logar")]
         public IActionResult Logar(LoginViewModelInput loginViewModelInput)

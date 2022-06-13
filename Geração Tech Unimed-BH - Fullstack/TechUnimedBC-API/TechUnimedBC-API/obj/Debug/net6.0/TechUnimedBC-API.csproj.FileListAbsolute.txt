@@ -25,3 +25,4 @@ C:\Users\Gabriel\Documents\Projetos VSCode\Bootcamps\Geração Tech Unimed-BH - 
 C:\Users\Gabriel\Documents\Projetos VSCode\Bootcamps\Geração Tech Unimed-BH - Fullstack\TechUnimedBC-API\TechUnimedBC-API\obj\Debug\net6.0\TechUnimedBC-API.pdb
 C:\Users\Gabriel\Documents\Projetos VSCode\Bootcamps\Geração Tech Unimed-BH - Fullstack\TechUnimedBC-API\TechUnimedBC-API\obj\Debug\net6.0\TechUnimedBC-API.genruntimeconfig.cache
 C:\Users\Gabriel\Documents\Projetos VSCode\Bootcamps\Geração Tech Unimed-BH - Fullstack\TechUnimedBC-API\TechUnimedBC-API\obj\Debug\net6.0\ref\TechUnimedBC-API.dll
+C:\Users\Gabriel\Documents\Projetos VSCode\Bootcamps\Geração Tech Unimed-BH - Fullstack\TechUnimedBC-API\TechUnimedBC-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll

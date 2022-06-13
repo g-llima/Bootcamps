@@ -13,6 +13,10 @@
         padding-bottom: 3px;
         border-bottom: 1px solid transparent;
     }
+
+    .activate {
+        border-bottom: 1px solid var(--bg-primary);
+    }
 }
 
 @media (max-width: 600px) {
